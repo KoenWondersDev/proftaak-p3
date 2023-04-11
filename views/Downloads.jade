@@ -1,0 +1,36 @@
+extends layout
+
+block content
+    .navbar
+      .mobile-nav-btn
+        .line1.mobline
+        .line2.mobline
+        .line3.mobline
+      .nav
+        ul
+          li
+            a(href='/') Products
+          li
+            a(href='/') Store finder
+          li
+            a(href='/pages/about') About
+          li
+            a(href='/pages/contact') Contact
+          li
+            a(class="Activelink" href='/pages/downloads') Downloads
+
+    .hero-about
+      .textbox
+        h1 Downloads
+        .line
+    .aboutconatiner 
+      .aboutinner.downloadcenter
+        a.download(href='/download/page.pdf', download='file.pdf') Download
+        a.download(href='/download/page.pdf', download='file.pdf') Download-1
+        a.download(href='/download/page.pdf', download='file.pdf') Download-2
+        a.download(href='/download/page.pdf', download='file.pdf') Download-3
+        a.download(href='/download/page.pdf', download='file.pdf') Download-4
+        a.download(href='/download/page.pdf', download='file.pdf') Download-5
+        a.download(href='/download/page.pdf', download='file.pdf') Download-6
+        
+

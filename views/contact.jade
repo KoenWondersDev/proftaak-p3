@@ -1,0 +1,34 @@
+extends layout
+
+block content
+    .navbar
+      .mobile-nav-btn
+        .line1.mobline
+        .line2.mobline
+        .line3.mobline
+      .nav
+        ul
+          li
+            a(href='/') Products
+          li
+            a(href='/') Store finder
+          li
+            a(href='/pages/about') About
+          li
+            a(class="Activelink" href='/pages/contact') Contact
+          li
+            a(href='/pages/downloads') Downloads
+
+    .hero
+      .textbox
+        h1 Contact
+        .line
+    
+    //- h1 My Form
+    .formbox
+      form(method='POST', class="contactbox")
+        textarea(class="contactinput", name="text", cols="50", rows="6") 
+        br
+        button(class="contactsend", type='submit') Submit
+    //- //- if text
+    //- //-   p #{text}

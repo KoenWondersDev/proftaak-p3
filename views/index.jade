@@ -1,0 +1,83 @@
+extends layout
+
+block content
+  .navbar
+    .mobile-nav-btn
+      .line1.mobline
+      .line2.mobline
+      .line3.mobline
+    .nav
+      ul
+        li
+          a(class="Activelink" href='/') Products
+        li
+          a(href='/') Store finder
+        li
+          a(href='/pages/about') About
+        li
+          a(href='/pages/contact') Contact
+        li
+          a(href='/pages/downloads') Downloads
+
+  .container
+    .hero
+      .textbox
+        h1 Products
+        .line
+
+      .searchbox
+        form.home-search(action='/pages/search', method='POST')
+          input(type="text", placeholder="Search for a product", name='name', required=true)
+          br
+          button.sub-btn(type='submit')
+            i.fa.fa-arrow-right
+
+    .swiper-container-box
+      .swiper-container
+        .swiper-wrapper
+          .swiper-slide
+            img(src="/images/dining1.png")
+          .swiper-slide
+            img(src="/images/dining2.png")
+          .swiper-slide
+            img(src="/images/dining3.png")
+          .swiper-slide
+            img(src="/images/dining4.png")
+          .swiper-slide
+            img(src="/images/dining5.png")
+          .swiper-slide
+            img(src="/images/lamp1.png")
+          .swiper-slide
+            img(src="/images/lamp2.png")
+          .swiper-slide
+            img(src="/images/lamp3.png")
+          .swiper-slide
+            img(src="/images/meubel1.jpg")
+          .swiper-slide
+            img(src="/images/meubel2.jpg")
+          .swiper-slide
+            img(src="/images/meubel3.png")
+          .swiper-slide
+            img(src="/images/stoel1.png")
+          .swiper-slide
+            img(src="/images/stoel2.png")
+          .swiper-slide
+            img(src="/images/stoel3.png")
+          .swiper-slide
+            img(src="/images/stoel4.png")
+        //- .swiper-slide
+        //-   p This is slide 6
+        //- .swiper-slide
+        //-   p This is slide 7
+        //- .swiper-slide
+        //-   p This is slide 8
+        //- .swiper-slide
+        //-   p This is slide 9
+        //- .swiper-slide
+        //-   p This is slide 10
+
+  script(src="https://unpkg.com/swiper/swiper-bundle.min.js")
+  
+
+
+

@@ -1,0 +1,43 @@
+extends layout
+
+block content
+    .navbar
+      .mobile-nav-btn
+        .line1.mobline
+        .line2.mobline
+        .line3.mobline
+      .nav
+        ul
+          li
+            a(href='/') Products
+          li
+            a(href='/') Store finder
+          li
+            a(href='/pages/about') About
+          li
+            a(href='/pages/contact') Contact
+          li
+            a(href='/pages/downloads') Downloads
+    
+    .hero
+      .textbox
+        h1 Resultaten
+        .line
+
+      .searchbox
+        form.home-search(action='/pages/search', method='POST')
+          input(type="text", name='name', required=true)
+          br
+          button.sub-btn(type='submit')
+            i.fa.fa-arrow-right
+
+
+    .search-container
+        each result in results
+            .search-load
+                img(src=result.foto).search-foto
+
+                .search-inner
+                    h2= result.naam
+                    div.line-search-inner
+                    p= result.beschrijving
